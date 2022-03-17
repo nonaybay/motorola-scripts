@@ -1,2 +1,1 @@
-8c9216b0c2a07abbc7d5a9295450c8b0  analyze
-9ab39c94abf800f0ff8ca91a3875e487  flash-stock
+<pre><p>600960b69333749d0d8de8306bccdc24  analyze</p><p>9ab39c94abf800f0ff8ca91a3875e487  flash-stock</p><p>961e50caaae7b3bbb7c6b4715a00961a  README.md</p></pre>
