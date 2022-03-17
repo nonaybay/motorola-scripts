@@ -1,1 +1,2 @@
-# motorola-scripts
+8c9216b0c2a07abbc7d5a9295450c8b0  analyze
+9ab39c94abf800f0ff8ca91a3875e487  flash-stock
