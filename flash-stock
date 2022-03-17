@@ -1,0 +1,62 @@
+#!/usr/bin/python3
+
+import os
+import time
+
+
+
+cmdlist = {
+    'adb reboot bootloader',
+    'fastboot reboot bootloader',
+
+    'fastboot --set-active=a',
+
+    'fastboot -w',
+    
+    'fastboot flash partition gpt.bin',
+    'fastboot flash bootloader bootloader.img',
+    'fastboot flash bluetooth BTFM.bin',
+    'fastboot flash dsp dspso.bin',
+    'fastboot flash radio radio.img',
+    'fastboot flash logo logo.bin',
+
+    'fastboot reboot fastboot',
+    
+    'fastboot flash boot boot.img',
+    'fastboot flash recovery recovery.img',
+    'fastboot flash dtbo dtbo.img',
+    'fastboot flash vbmeta vbmeta.img',
+    'fastboot flash super super.img_sparsechunk.0',
+    'fastboot flash super super.img_sparsechunk.1',
+    'fastboot flash super super.img_sparsechunk.2',
+    'fastboot flash super super.img_sparsechunk.3',
+    'fastboot flash super super.img_sparsechunk.4',
+    'fastboot flash super super.img_sparsechunk.5',
+    'fastboot flash super super.img_sparsechunk.6',
+    'fastboot flash super super.img_sparsechunk.7',
+    
+    'fastboot reboot bootloader',
+    
+    'fastboot erase carrier',
+    'fastboot erase metadata',
+    'fastboot erase ddr',
+    'fastboot erase userdata',
+    
+    'fastboot reboot',
+}
+
+
+
+def showprogress(cmd):
+    os.system('clear')
+    print('Executing: {}'.format(cmd))
+
+
+def execcmd(cmd):
+    showprogress(cmd)
+    os.system(cmd)
+
+
+# loop
+for command in cmdlist:
+    execcmd(command)
